@@ -51,6 +51,28 @@ a {
     cursor: pointer;
 }
 
+.control-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1px solid #575f66;
+    background: transparent;
+}
+
+.control-btn-next {
+    rotate: 180deg;
+}
+
+.control-btn:hover {
+    cursor: pointer;
+    color: #fff;
+    background: #2e80ce;
+    border: none;
+}
+
 .section-heading.lv2 {
     color: #10375c;
     font-size: 5rem;
@@ -454,4 +476,11 @@ a {
     font-size: 1.4rem;
     font-weight: 300;
     line-height: 1.85;
+}
+
+.member__control {
+    margin-top: 38px;
+    display: flex;
+    justify-content: center;
+    gap: 18px;
 }
