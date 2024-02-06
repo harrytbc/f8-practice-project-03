@@ -51,6 +51,12 @@ a {
     cursor: pointer;
 }
 
+.control {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+}
+
 .control-btn {
     display: flex;
     align-items: center;
@@ -73,7 +79,7 @@ a {
     border: none;
 }
 
-.section-heading.lv2 {
+.section-heading {
     color: #10375c;
     font-size: 5rem;
     font-weight: 600;
@@ -480,7 +486,126 @@ a {
 
 .member__control {
     margin-top: 38px;
+}
+/* Install */
+.install {
+    margin-top: 265px;
+}
+
+.install__row {
+    position: relative;
+    padding: 76px 70px;
     display: flex;
-    justify-content: center;
-    gap: 18px;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 4px;
+    background: #2e80ce;
+}
+
+.install__phone {
+    margin-top: -95px;
+    position: absolute;
+    bottom: 0;
+    object-fit: cover;
+}
+
+.install__content {
+    width: 586px;
+}
+
+.install__heading,
+.install__desc {
+    color: #fff;
+    width: 489px;
+}
+
+.install__media {
+    margin-top: 38px;
+    display: flex;
+    gap: 28px;
+}
+/* News */
+.news {
+    padding: 170px 0;
+}
+
+.news__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.news__content {
+    width: 40.1%;
+}
+
+.news__link {
+    color: #10375c;
+    margin: 10px 0 28px;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.2;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    display: inline-block;
+}
+
+.news__control {
+    justify-content: flex-start;
+}
+
+.news__blog-list {
+    width: 48.8%;
+    display: flex;
+    gap: 30px;
+}
+
+.news-item {
+    display: flex;
+    flex-direction: column;
+    width: 270px;
+    border: 1px solid #e8ebee;
+    border-radius: 12px;
+}
+
+.news-item:hover {
+    transform: scale(1.03);
+    transition: 0.25s all;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.news-item__img {
+    width: 270px;
+    height: 172px;
+    border-radius: 12px 12px 0px 0px;
+    object-fit: cover;
+}
+
+.news-item__body {
+    padding: 18px 22px;
+}
+
+.news-item__body-heading {
+    color: #10375c;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.6;
+}
+
+.news-item__body-desc {
+    color: #575f66;
+    margin: 12px 0;
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 1.7;
+}
+.news-item__body-link {
+    color: #10375c;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.news-item__body-link:hover {
+    color: #2e80ce;
 }
